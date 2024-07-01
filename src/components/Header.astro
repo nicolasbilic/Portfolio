@@ -51,10 +51,7 @@ import Container from "@components/Container.astro";
               SOCIALS.map((SOCIAL) => (
                 <a
                   href={SOCIAL.HREF}
-                  /* target="_blank" */
-                  target={
-                    SOCIAL.HREF.startsWith("mailto:") ? "_self" : "_blank"
-                  }
+                  target=""
                   aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`}
                   class="group size-10 rounded-full p-2 hover:bg-black/5 dark:hover:bg-white/20  blend"
                 >
