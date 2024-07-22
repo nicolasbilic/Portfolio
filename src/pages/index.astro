@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard";
+import ArrowCard2 from "@components/ArrowCard";
 import { SITE, SOCIALS } from "@consts";
 import TwinklingStars from "@components/TwinklingStars.astro";
 import MeteorShower from "@components/MeteorShower.astro";
@@ -226,14 +227,82 @@ const stack = [
         </div>
       </section>
 
-      <!-- Project Preview Section -->
+      <!-- Created Sites Preview Section -->
       <section class="animate" id="projects">
         <div class="space-y-4">
           <div class="flex justify-between">
-            <!-- <p class="font-semibold text-black dark:text-white">
-              Projets récents
-            </p> -->
-            <p class="font-semibold text-black dark:text-white">
+            <p class="font-semibold text-black dark:text-white uppercase">
+              Sites créés
+            </p>
+          </div>
+          <ul class="space-y-4">
+            {
+              projects.map((project) => (
+                <li>
+                  <a
+                    href="https://www.escaleflayoscaise.com"
+                    target="_blank"
+                    class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
+                  >
+                    <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
+                      <div class="flex flex-wrap items-center gap-2" />
+                      <div class="font-semibold mt-3 text-black dark:text-white mb-5">
+                        Site vitrine : Location de vacances
+                      </div>
+                      <img
+                        class="rounded"
+                        src="/site-lescale-flayoscaise.webp"
+                        alt="L'escale Flayoscaise, site vitrine de location de vacances"
+                      />
+                    </div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+
+      <!-- Personal Project Preview Section -->
+      <section class="animate" id="projects">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white uppercase">
+              Projets personnels
+            </p>
+          </div>
+          <ul class="space-y-4">
+            {
+              projects.map((project) => (
+                <li>
+                  <a
+                    href="https://front-gaming-app.vercel.app/"
+                    target="_blank"
+                    class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
+                  >
+                    <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
+                      <div class="flex flex-wrap items-center gap-2" />
+                      <div class="font-semibold mt-3 text-black dark:text-white mb-5">
+                        Site vitrine : entreprise de jeux-vidéos
+                      </div>
+                      <img
+                        class="rounded"
+                        src="/ludus-studios-project.webp"
+                        alt="Ludus Studios, site vitrine projet pour une entreprise de jeux-vidéos"
+                      />
+                    </div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="animate" id="projects">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white uppercase">
               Projets personnels
             </p>
           </div>
@@ -247,7 +316,7 @@ const stack = [
             }
           </ul>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
 </PageLayout>
