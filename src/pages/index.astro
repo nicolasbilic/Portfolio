@@ -91,16 +91,19 @@ const stack = [
           <p
             class="animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75"
           >
-            Hello, Je m'appelle Nicolas
+            Nicolas
           </p>
           <p
             class="animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white"
           >
-            Développeur fullstack
+            Développeur web
           </p>
           <p class="animated text-sm md:text-base lg:text-lg opacity-75">
-            Je crée des sites vitrines et des blogs pour entreprises et
-            particuliers.
+            <!-- Je crée des sites vitrines et des blogs pour entreprises et
+            particuliers. -->
+            Je crée des <b><i>sites vitrines</i></b>, <b><i>portfolio</i></b> et
+            <b><i>e-commerces</i></b> pour
+            <b><i>entreprises</i></b> et <b><i>particuliers</i></b>.
           </p>
           <div
             id="ctaButtons"
@@ -124,20 +127,20 @@ const stack = [
       <section class="animate">
         <article>
           <p>
-            Je suis un <b><i>développeur fullstack</i></b>, je fais autant du <b
-              ><i>front-end</i></b
-            >, que du <b><i>back-end</i></b>.
+            Je crée des <b><i>sites vitrines</i></b>, <b><i>portfolio</i></b> et
+            <b><i>e-commerces</i></b> pour
+            <b><i>entreprises</i></b> et <b><i>particuliers</i></b>.
           </p>
           <p>
             J'ai reçu mon diplôme de <b><i>développeur web et web mobile</i></b>
             en 2024 et exerce une activité de <b><i>freelance</i></b> depuis.
           </p>
-          <p>Aujourd'hui</p>
           <p>
-            Je crée des <b><i>sites vitrines</i></b> et des <b><i>blogs</i></b> pour
-            <b><i>entreprises</i></b> et <b><i>particuliers</i></b>, ainsi que
-            des <b><i>projets personnels</i></b> sur le côté.
+            Je suis un <b><i>développeur fullstack</i></b>, je fais autant du <b
+              ><i>front-end</i></b
+            >, que du <b><i>back-end</i></b>.
           </p>
+          <p>Je crée aussi des <b><i>projets personnels</i></b> sur le côté.</p>
           <p>Mon email : <b>nicolasbilic.dev@nicolasbilic.com</b></p>
         </article>
       </section><b><i></i></b>
@@ -247,13 +250,25 @@ const stack = [
                     <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
                       <div class="flex flex-wrap items-center gap-2" />
                       <div class="font-semibold mt-3 text-black dark:text-white mb-5">
-                        Site vitrine : Location de vacances
+                        L'Escale Flayoscaise | Location de vacances | Site
+                        Vitrine
                       </div>
                       <img
                         class="rounded"
                         src="/site-lescale-flayoscaise.webp"
                         alt="L'escale Flayoscaise, site vitrine de location de vacances"
                       />
+                      <br />
+                      <p>
+                        EscaleFlayoscaise.com est un site de location réalisé
+                        par Nicolas Bilic EI pour L'Escale Flayoscaise, un
+                        logement de vacances situé dans le Var. Les utilisateurs
+                        et vacanciers peuvent consulter les atouts du studio,
+                        les tarifs, les modalités de location, des photos du
+                        logement et ont la possibilité de joindre le
+                        propriétaire pour connaître les disponibilités et faire
+                        une réservation.
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -276,6 +291,40 @@ const stack = [
               projects.map((project) => (
                 <li>
                   <a
+                    href="https://alpes-eta.vercel.app/"
+                    target="_blank"
+                    class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
+                  >
+                    <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
+                      <div class="flex flex-wrap items-center gap-2" />
+                      <div class="font-semibold mt-3 text-black dark:text-white mb-5">
+                        ALPES | Entreprise d'Alpinisme | Site Vitrine
+                      </div>
+                      <img
+                        class="rounded"
+                        src="/alpes-app.jpg"
+                        alt="ALPES, Site vitrine : Entreprise d'Alpinisme"
+                      />
+                      <br />
+                      <p>
+                        ALPES est un site dédié à une entreprise d'Alpinisme
+                        avec un système de réservation, une newsletter, un
+                        formulaire de contact, les utilisateurs peuvent
+                        consulter les activités à faire, les tarifs des forfaits
+                        et les résidences. Ceci est un projet personnel.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <br />
+          <ul class="space-y-4">
+            {
+              projects.map((project) => (
+                <li>
+                  <a
                     href="https://front-gaming-app.vercel.app/"
                     target="_blank"
                     class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
@@ -283,13 +332,19 @@ const stack = [
                     <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
                       <div class="flex flex-wrap items-center gap-2" />
                       <div class="font-semibold mt-3 text-black dark:text-white mb-5">
-                        Site vitrine : entreprise de jeux-vidéos
+                        Ludus Studios | Entreprise de Jeux-Vidéos | Site Vitrine
                       </div>
                       <img
                         class="rounded"
                         src="/ludus-studios-project.webp"
                         alt="Ludus Studios, site vitrine projet pour une entreprise de jeux-vidéos"
                       />
+                      <br />
+                      <p>
+                        Ludus Studios est un site dédié à une entreprise de
+                        Jeux-Vidéos avec plusieurs jeux-vidéos réparties en
+                        catégories. Ceci est un projet personnel.
+                      </p>
                     </div>
                   </a>
                 </li>
